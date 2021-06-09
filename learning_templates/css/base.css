@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+nav ul li a{
+  text-decoration: none;
+  float: left;
+  display: flex;
+}
+
+.logo{
+  color: black;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  border-sizing:border-box;
+}

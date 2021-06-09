@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load my_extras %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="base.css">
+  <body>
+    <nav>
+      <ul>
+        <li><a class='logo' href="{% url 'index' %}">BRAND</a></li>
+        <li><a href="{% url 'admin:index' %}">ADMIN</a></li>
+        <li><a href="{% url 'basic_app:other' %}">OTHER</a></li>
+        <li><a href="{% url 'basic_app:relative' %}">RELATIVE</a></li>
+      </ul>
+    </nav>
+      {% block body_block%}
+      <!-- anythin outside of this will be inherited if you extend -->
+      {% endblock %}
+  </body>
+</html>
